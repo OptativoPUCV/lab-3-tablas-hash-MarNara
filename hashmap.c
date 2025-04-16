@@ -51,18 +51,11 @@ void insertMap(HashMap * map, char * key, void * value) {
    while( actualPos != NULL ){
     if(is_equal(key, map->buckets[pos1]->key)){
         map->buckets[pos1]->value = value;
-
-        }
-        pos1 = (pos1 + 1) % map->capacity;
+    }
+    pos1 = (pos1 + 1) % map->capacity;
 
 
    }
-
-    /*
-    for(int k = 0; k < tamano; k++ ){
-        
-        
-    }*/
 
 
 }
