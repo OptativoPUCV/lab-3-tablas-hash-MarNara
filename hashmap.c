@@ -81,7 +81,7 @@ HashMap * createMap(long capacity) {
     for(int k = 0; k < map->size; k++){
         map->buckets[k] = NULL;
     }
-    return NULL;
+    return map;
 }
 
 void eraseMap(HashMap * map,  char * key) {    
