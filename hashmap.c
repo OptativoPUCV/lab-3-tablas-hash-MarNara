@@ -51,10 +51,18 @@ void insertMap(HashMap * map, char * key, void * value) {
     while( actualPos != NULL ){
         pos1 = (pos1 + 1) % map->capacity;
     }
-    actualPos->key = key;
+    /*actualPos->key = key;
     actualPos->value = value;
     if(map->capacity /map->size >= 0.7){
         enlarge(map);
+    }*/
+
+    if(map->buckets[pos1] == NULL){
+        map->buckets[pos1] = createPair(strdup(key), value);
+    }
+    else{
+        map->buckets[pos1]->key = strdup(key);
+        map->buckets[pos1]->value = value;
     }
 
 }
