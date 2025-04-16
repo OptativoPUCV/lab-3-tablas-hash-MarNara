@@ -80,14 +80,14 @@ HashMap * createMap(long capacity) {
 
     
     map->buckets = malloc(capacity * sizeof(int));
-    if(!map->buckets){
+    if(map->buckets == NULL){
         free(map);
         return NULL;
     }
     
     
     for( long k = 0; k < capacity; k++){
-        map->buckets[k] = NULL;
+        map->buckets[k] = map;
     }
     map->capacity = capacity;
     map->current = -1;
