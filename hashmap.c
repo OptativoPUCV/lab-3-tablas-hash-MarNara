@@ -90,7 +90,7 @@ HashMap * createMap(long capacity) {
         map->buckets[k] = NULL;
     }
     map->capacity = capacity;
-    map->current = -1;
+    map->current = NULL;
 
     
     return NULL;
