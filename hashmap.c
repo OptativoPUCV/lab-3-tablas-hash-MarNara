@@ -78,17 +78,18 @@ HashMap * createMap(long capacity) {
     HashMap *map = malloc(sizeof(HashMap));
     if(map == NULL) EXIT_FAILURE;
 
-    map->capacity = capacity;
-    //map->buckets = malloc(capacity * sizeof(int));
+    
+    map->buckets = malloc(capacity * sizeof(int));
     if(map->buckets == NULL){
         free(map);
         return NULL;
     }
     
+    
     for( long k = 0; k < capacity; k++){
         map->buckets[k] = NULL;
     }
-
+    map->capacity = capacity;
     map->current = -1;
 
     
