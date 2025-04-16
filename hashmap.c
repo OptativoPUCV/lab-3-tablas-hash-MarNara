@@ -46,13 +46,14 @@ void insertMap(HashMap * map, char * key, void * value) {
     /*1)preguntar por la capacidad del arreglo para ver si luego lo aumentamos en uno.
     2) entrar en un map con el while
     */
-   
-   while( map->buckets[pos1] != NULL && map->buckets[pos1]->key != NULL ){
+   Pair * actualPos = map->buckets[pos1];
+
+   while( actualPos != NULL ){
     if(is_equal(key, map->buckets[pos1]->key)){
         map->buckets[pos1]->value = value;
 
-    }
-    pos1 = (pos1 + 1) % map->capacity;
+        }
+        pos1 = (pos1 + 1) % map->capacity;
 
 
    }
