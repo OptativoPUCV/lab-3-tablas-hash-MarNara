@@ -61,6 +61,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         map->buckets[pos1]->key = strdup(key);
         map->buckets[pos1]->value = value;
     }
+    map->size++;
     
 
 }
