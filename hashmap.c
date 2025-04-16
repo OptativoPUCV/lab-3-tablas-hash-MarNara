@@ -75,6 +75,8 @@ void enlarge(HashMap * map) {
 
 
 HashMap * createMap(long capacity) {
+    //map->size = 0;
+
 
     return NULL;
 }
