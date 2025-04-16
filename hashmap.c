@@ -79,7 +79,7 @@ HashMap * createMap(long capacity) {
     if(map == NULL) EXIT_FAILURE;
 
     map->capacity = capacity;
-    map->buckets = malloc(capacity * sizeof(int));
+    //map->buckets = malloc(capacity * sizeof(int));
     if(map->buckets == NULL){
         free(map);
         return NULL;
