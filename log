@@ -9,3 +9,9 @@ hashmap.c:50:9: error: unused variable 'tamanoNuevo' [-Werror=unused-variable]
          ^~~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 eeef3b7
+Wed, Apr 16, 2025  9:17:17 AM: 
+ hashmap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  0|6
+total_score: 0/70
+a704406
