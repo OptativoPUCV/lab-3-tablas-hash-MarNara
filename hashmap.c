@@ -79,12 +79,8 @@ HashMap * createMap(long capacity) {
     if(map == NULL) EXIT_FAILURE;
 
     for(int k = 0; k >= map->size; k++){
-        map->buckets[k] = NULL;
+        map->buckets[k] = map;
     }
-    return map;
-
-
-
     return NULL;
 }
 
