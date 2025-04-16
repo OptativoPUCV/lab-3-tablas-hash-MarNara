@@ -42,11 +42,11 @@ int is_equal(void* key1, void* key2){
 void insertMap(HashMap * map, char * key, void * value) {
     //buckets es un arreglo, y current es una posicion
     
-    //long pos1 = hash(key, map->capacity); 
+    long pos1 = hash(key, map->capacity); 
     /*1)preguntar por la capacidad del arreglo para ver si luego lo aumentamos en uno.
     2) entrar en un map con el while
     */
-    /*
+    
     Pair *actualPos = map->buckets[pos1];
 
     while( actualPos != NULL ){
@@ -59,7 +59,8 @@ void insertMap(HashMap * map, char * key, void * value) {
     else{
         map->buckets[pos1]->key = strdup(key);
         map->buckets[pos1]->value = value;
-    }*/
+    }
+    
 
 }
 
