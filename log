@@ -1,0 +1,11 @@
+Wed, Apr 16, 2025  9:17:05 AM: 
+ hashmap.c | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:50:9: error: unused variable 'tamanoNuevo' [-Werror=unused-variable]
+     int tamanoNuevo = 0;
+         ^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+eeef3b7
