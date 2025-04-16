@@ -80,7 +80,7 @@ HashMap * createMap(long capacity) {
 
     
     map->buckets = malloc(capacity * sizeof(int));
-    if(map->buckets == NULL){
+    if(!map->buckets){
         free(map);
         return NULL;
     }
