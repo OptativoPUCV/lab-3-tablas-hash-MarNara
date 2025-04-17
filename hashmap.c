@@ -125,7 +125,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-    long pos = map->buckets[0];
+    //long pos = map->buckets[0];
     
     
 
