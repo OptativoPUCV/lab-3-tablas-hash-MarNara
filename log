@@ -785,3 +785,9 @@ ju., 17 de abr. de 2025 18:12:51:
  tests:  6|4
 total_score: 30/70
 576606a
+ju., 17 de abr. de 2025 18:14:30: 
+ hashmap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+ tests:  6|4
+total_score: 30/70
+bf34090
