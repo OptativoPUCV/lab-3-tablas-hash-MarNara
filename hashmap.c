@@ -51,7 +51,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 
     while( actualPos != NULL ){
         pos1 = (pos1 + 1) % map->capacity;
-        //actualPos = map->buckets[pos1];
+        actualPos = map->buckets[pos1];
     }
     
     if(map->buckets[pos1] == NULL){
