@@ -127,9 +127,9 @@ Pair * searchMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
     long pos = map->buckets[0];
     
-    return pos;
+    
 
-    //return NULL;
+    return NULL;
 }
 
 Pair * nextMap(HashMap * map) {
