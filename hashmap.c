@@ -50,6 +50,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     Pair *actualPos = map->buckets[pos1];
 
     while( actualPos != NULL ){
+        if (is_equal(map->buckets[pos1]->key, key)) return;
         pos1 = (pos1 + 1) % map->capacity;
         actualPos = map->buckets[pos1];
     }
@@ -81,7 +82,7 @@ HashMap * createMap(long capacity) {
     if(map == NULL) exit(EXIT_FAILURE);
 
     
-    map->buckets =(Pair**) calloc(capacity, sizeof(Pair**));
+    map->buckets = malloc(capacity * sizeof(int));
     if(map->buckets == NULL){
         free(map);
         return NULL;
