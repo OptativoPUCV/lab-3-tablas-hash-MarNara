@@ -82,16 +82,16 @@ HashMap * createMap(long capacity) {
     if(map == NULL) exit(EXIT_FAILURE);
 
     
-    map->buckets = malloc(capacity * sizeof(int));
+    map->buckets = (Pair**)calloc(capacity, sizeof(Pair*));
     if(map->buckets == NULL){
         free(map);
         return NULL;
     }
     
-    
+    /*
     for( long k = 0; k < capacity; k++){
         map->buckets[k] = NULL;
-    }
+    }*/
     map->size = 0;
     map->capacity = capacity;
     map->current = -1;
