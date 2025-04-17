@@ -111,12 +111,12 @@ Pair * searchMap(HashMap * map,  char * key) {
     2) entrar en un map con el while
     */
     
-    Pair *actualPos = map->buckets[pos1];
+    //Pair *actualPos = map->buckets[pos1];
 
-    while( actualPos != NULL ){
+    while( map->buckets[pos1] != NULL && map->buckets[pos1]->key != NULL ){
         if(is_equal(map->buckets[pos1]->key, key)) return key;
         pos1 = (pos1 + 1) % map->capacity;
-        actualPos = map->buckets[pos1];
+        //actualPos = map->buckets[pos1];
     }
     
     return NULL;
