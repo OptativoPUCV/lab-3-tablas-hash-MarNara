@@ -38,11 +38,12 @@ int is_equal(void* key1, void* key2){
     return 0;
 }
 
+/*
 char * my_strdup(const char *str) {
     char *copy = malloc(strlen(str) + 1);
     if (copy != NULL) strcpy(copy, str);
     return copy;
-}
+}*/
 
 void insertMap(HashMap * map, char * key, void * value) {
     //buckets es un arreglo, y current es una posicion
@@ -61,10 +62,10 @@ void insertMap(HashMap * map, char * key, void * value) {
     }
     
     if(map->buckets[pos1] == NULL){
-        map->buckets[pos1] = createPair(my_strdup(key), value);
+        map->buckets[pos1] = createPair(strdup(key), value);
     }
     else{
-        map->buckets[pos1]->key = my_strdup(key);
+        map->buckets[pos1]->key = strdup(key);
         map->buckets[pos1]->value = value;
     }
     map->size++;
