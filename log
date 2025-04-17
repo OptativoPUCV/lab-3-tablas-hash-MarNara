@@ -646,3 +646,7 @@ test.c:14:6: note: destination object referenced by 'restrict'-qualified argumen
       |      ^~~
 cc1.exe: all warnings being treated as errors
 0addb1e
+ju., 17 de abr. de 2025 17:33:48: 
+ tests:  5|4
+total_score: 30/70
+05d8d2f
