@@ -78,7 +78,7 @@ HashMap * createMap(long capacity) {
      inicializa el arreglo de buckets con casillas nulas, inicializa el resto de variables y retorna el mapa. 
      Inicialice el índice current a -1.*/
     HashMap *map = malloc(sizeof(HashMap));
-    if(map == NULL) EXIT_FAILURE;
+    if(map == NULL) exit(EXIT_FAILURE);
 
     
     map->buckets = malloc(capacity * sizeof(int));
