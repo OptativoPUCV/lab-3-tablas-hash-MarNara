@@ -115,12 +115,12 @@ Pair * searchMap(HashMap * map,  char * key) {
 
     while( map->buckets[pos1] != NULL && map->buckets[pos1]->key != NULL ){
         if(is_equal(map->buckets[pos1]->key, key)){
+            map->current = pos1;
             return map->buckets[pos1];
         }
         pos1 = (pos1 + 1) % map->capacity;
         
     }
-    map->current = map->buckets[pos1];
     
     return NULL;
 }
