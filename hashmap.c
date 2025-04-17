@@ -106,10 +106,10 @@ void eraseMap(HashMap * map,  char * key) {
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
-    long pos1 = hash(key, map->capacity); 
+    /*long pos1 = hash(key, map->capacity); 
     /*1)preguntar por la capacidad del arreglo para ver si luego lo aumentamos en uno.
     2) entrar en un map con el while
-    */
+    
     
     Pair *actualPos = map->buckets[pos1];
 
@@ -118,8 +118,7 @@ Pair * searchMap(HashMap * map,  char * key) {
         pos1 = (pos1 + 1) % map->capacity;
         actualPos = map->buckets[pos1];
     }
-    
-
+    */
     return NULL;
 }
 
