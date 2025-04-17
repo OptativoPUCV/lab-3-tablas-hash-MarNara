@@ -656,3 +656,17 @@ ju., 17 de abr. de 2025 17:48:20:
  tests:  5|4
 total_score: 30/70
 f1fc660
+ju., 17 de abr. de 2025 18:03:22: 
+ hashmap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:4:
+hashmap.c: In function 'searchMap':
+hashmap.c:117:59: error: returning 'char *' from a function with incompatible return type 'Pair *' [-Wincompatible-pointer-types]
+  117 |         if(is_equal(map->buckets[pos1]->key, key)) return key;
+      |                                                           ^~~
+test.c: At top level:
+test.c:8:8: warning: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+    8 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+6d6f45e
