@@ -116,12 +116,11 @@ Pair * searchMap(HashMap * map,  char * key) {
     while( map->buckets[pos1] != NULL && map->buckets[pos1]->key != NULL ){
         if(is_equal(map->buckets[pos1]->key, key)){
             return map->buckets[pos1];
-        }else{
-            return NULL;
         }
         pos1 = (pos1 + 1) % map->capacity;
-        //actualPos = map->buckets[pos1];
+        
     }
+    map->current = map->buckets[pos1];
     
     return NULL;
 }

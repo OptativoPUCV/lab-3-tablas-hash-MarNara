@@ -791,3 +791,17 @@ ju., 17 de abr. de 2025 18:14:30:
  tests:  6|4
 total_score: 30/70
 bf34090
+ju., 17 de abr. de 2025 18:17:24: 
+ hashmap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:4:
+hashmap.c: In function 'searchMap':
+hashmap.c:123:18: error: assignment to 'long int' from 'Pair *' makes integer from pointer without a cast [-Wint-conversion]
+  123 |     map->current = map->buckets[pos1];
+      |                  ^
+test.c: At top level:
+test.c:8:8: warning: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+    8 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+e275cc7
