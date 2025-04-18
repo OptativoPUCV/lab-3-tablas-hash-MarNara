@@ -125,7 +125,13 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {    
-
+    long pos1 = hash(key, map->capacity);
+    while( map->buckets[pos1] != NULL && map->buckets[pos1]->key != NULL ){
+        pos1 = (pos1 + 1) % map->capacity;
+        return map->buckets[pos1] = NULL;
+        
+    }
+    
 
 }
 
@@ -167,6 +173,5 @@ Pair * nextMap(HashMap * map) {
             return map->buckets[k];
         }
     }
-
     return NULL;
 }
