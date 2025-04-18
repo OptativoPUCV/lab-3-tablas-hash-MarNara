@@ -125,9 +125,12 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-    //long pos = map->buckets[0];
-    
-    
+    long pos = map->buckets[0];
+    for(long k = 0; k < map->capacity; k++){
+        if(map->buckets[k] != NULL && map->buckets[k]->key){
+            return map->buckets[k];
+        }
+    }
 
     return NULL;
 }
