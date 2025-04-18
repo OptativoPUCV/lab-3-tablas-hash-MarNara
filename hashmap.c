@@ -103,7 +103,7 @@ HashMap * createMap(long capacity) {
     HashMap *map = malloc(sizeof(HashMap));
     if(map == NULL) exit(EXIT_FAILURE);
 
-    
+     
     map->buckets = (Pair**)calloc(capacity, sizeof(Pair*));
     if(map->buckets == NULL){
         free(map);
