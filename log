@@ -1018,3 +1018,9 @@ vi., 18 de abr. de 2025  1:15:04:
  tests:  14|1
 total_score: 60/70
 a6c5e0b
+vi., 18 de abr. de 2025  1:17:00: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 70/70
+560f35a
