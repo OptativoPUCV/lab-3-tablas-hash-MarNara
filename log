@@ -883,3 +883,9 @@ test.c:8:8: warning: '_strdup' redeclared without dllimport attribute: previous 
     8 | char * _strdup(const char * str) {
       |        ^~~~~~~
 89bd9cb
+ju., 17 de abr. de 2025 20:27:15: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  10|3
+total_score: 40/70
+bdfa549
