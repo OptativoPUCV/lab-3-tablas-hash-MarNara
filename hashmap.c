@@ -80,20 +80,21 @@ void enlarge(HashMap * map) {
         new_buckets[j] = 0;
     }
 
-    //devolver valores para trabajar como los nuevos
+    //devolver valores para trabajar
     new_buckets = new_buckets;
     new_capacity = new_capacity;
     map->size = 0;
-
+    map->current = -1;
     for(long k = 0; k < old_capacity; k++){
         if(old_buckets[k] != NULL && old_buckets[k]->key != NULL){
             insertMap(map, old_buckets[k]->key, old_buckets[k]->value);
             free(old_buckets[k]);
+            free(old_buckets[k]->key);
         }
     } 
     free(old_buckets);
-    map->current = -1;
     */
+    
 }
 
 
