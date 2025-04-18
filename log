@@ -904,3 +904,9 @@ ju., 17 de abr. de 2025 23:15:55:
  tests:  10|3
 total_score: 40/70
 5dde703
+ju., 17 de abr. de 2025 23:17:43: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|3
+total_score: 40/70
+65f3db1
