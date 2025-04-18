@@ -982,3 +982,9 @@ vi., 18 de abr. de 2025  0:30:55:
  1 file changed, 21 insertions(+), 2 deletions(-)
  tests: |
 b8cab44
+vi., 18 de abr. de 2025  0:48:45: 
+ hashmap.c | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+ tests:  13|2
+total_score: 50/70
+d04dd82
