@@ -922,3 +922,9 @@ ju., 17 de abr. de 2025 23:25:34:
  tests:  10|3
 total_score: 40/70
 39bdf47
+ju., 17 de abr. de 2025 23:29:06: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|3
+total_score: 40/70
+ac92742
