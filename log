@@ -1000,3 +1000,9 @@ vi., 18 de abr. de 2025  0:53:56:
  tests:  13|2
 total_score: 50/70
 f2bac3a
+vi., 18 de abr. de 2025  0:56:49: 
+ hashmap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  14|1
+total_score: 60/70
+e17bde5

@@ -68,12 +68,11 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
-    /*
-    
+    /**/
     long old_capacity = map->capacity;
     Pair **old_buckets = map->buckets;
 
-    map->capacity= 2;
+    map->capacity *= 2;
     map->buckets = calloc(map->capacity, sizeof(Pair *));
     map->size = 0;
 
@@ -84,7 +83,7 @@ void enlarge(HashMap * map) {
         }
     }
     free(old_buckets);
-*/
+
 
     /*
     Pair ** old_buckets = map->buckets;
@@ -156,9 +155,6 @@ void eraseMap(HashMap * map,  char * key) {
         if(pos1 == originalPos) break;
         
     }
-
-    
-
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
