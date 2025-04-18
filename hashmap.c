@@ -144,6 +144,7 @@ HashMap * createMap(long capacity) {
 
 void eraseMap(HashMap * map,  char * key) {    
     long pos1 = hash(key, map->capacity);
+    long originalPos = pos1;
     while( map->buckets[pos1] != NULL && map->buckets[pos1]->key != NULL ){
         if(is_equal(map->buckets[pos1]->key, key)){
             free(map->buckets[pos1]);
@@ -152,8 +153,10 @@ void eraseMap(HashMap * map,  char * key) {
             return ;
         }
         pos1 = (pos1 + 1) % map->capacity;
+        if(pos1 == originalPos) break;
         
     }
+
     
 
 }
